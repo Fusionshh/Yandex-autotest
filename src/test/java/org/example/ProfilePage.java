@@ -30,6 +30,9 @@ public class ProfilePage {
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[1]/div/div/div/div/ul/ul/li[6]/a/span")
     private WebElement logoutBtn;
 
+    /**
+     *  Метод для получение имени пользователя с веб страницы
+     */
     public String getUserName() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div[1]" +
