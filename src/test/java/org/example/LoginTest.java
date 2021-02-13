@@ -40,11 +40,11 @@ public class LoginTest {
 
     @Test
     public void loginTest() {
-        //Ввод логина
+        //Ввод логина (возьмет логин из файла conf.properties)
         loginPage.inputLogin(ConfProperties.getProperty("login"));
         //Нажимаем по кнопке входа
         loginPage.clickLoginBtn();
-        //Ввод пароля
+        //Ввод пароля (возьмет пароль из файла conf.properties)
         loginPage.inputPasswd(ConfProperties.getProperty("password"));
         //Нажимаем кнопку входа
         loginPage.clickLoginBtn();
